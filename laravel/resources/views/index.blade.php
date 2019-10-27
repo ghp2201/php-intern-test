@@ -18,7 +18,21 @@
     </tr>
     @foreach ($produtos as $produtos)
     <tr>
-        <td></td>
+        <td>{{ $produto -> id }}</td>
+        <td>{{ $produto -> name }}</td>
+        <td>{{ $produto -> description }}</td>
+        <td>{{ $produto -> value}}</td>
+        <td>
+            <form action = "{{ route('produtos.delete), $produto -> id }}" method = "POST">
+                <a class = "btn btn-info" href = "{{ route('produtos.show'), $produto -> id }}">Exibir</a>
+                <a class = "btn btn-primary" href = "{{ route('produtos.edit'), $produto -> id }}">Editar</a>
+                @csrf
+                @method('delete')
+                <button type = "submit" class = "btn btn-danger">Excluir</button>
+            </form>
+        </td>
     </tr>
     @endforeach
 </table>
+{!! $produtos -> links() !!}
+@endsection
