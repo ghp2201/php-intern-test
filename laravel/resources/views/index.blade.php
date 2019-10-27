@@ -18,7 +18,7 @@
     </tr>
     @foreach ($produtos as $produtos)
     <tr>
-        <td>{{ $produto -> id }}</td>
+        <td>{{ ++i }}</td>
         <td>{{ $produto -> name }}</td>
         <td>{{ $produto -> description }}</td>
         <td>{{ $produto -> value}}</td>
