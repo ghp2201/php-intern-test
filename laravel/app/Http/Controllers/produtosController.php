@@ -9,8 +9,8 @@ class produtosController extends Controller
     //tela inicial e listagem dos produtos:
     public function index()
     {
-        $produtos = produtos::latest()->paginate(5);
-        return view ('produtos.index', compact('produtos'))->with('i', (request() -> input('page', 1) -1) *5);
+        $produtos = produtos::latest() -> paginate(5);
+        return view ('produtos.index', compact('produtos')) -> with('i', (request() -> input('page', 1) -1) *5);
     }
     //criação dos produtos:
     public function create()
@@ -18,7 +18,7 @@ class produtosController extends Controller
         return view('produtos.create');
     }
     //armazenamento do produto recem criado:
-    public function store(request $request)
+    public function store(Request $request)
     {
         //array dos valores
         $request -> validate([
@@ -38,7 +38,7 @@ class produtosController extends Controller
     //exibe a tela de edição do produto:
     public function edit(Produto $produto)
     {
-        return view('produtps.edit', compact('produto'));
+        return view('produtos.edit', compact('produto'));
     }
     //atualiza o produto para o armazenamento:
     public function update(Request $request, Product $produto)
