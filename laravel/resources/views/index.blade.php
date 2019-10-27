@@ -15,10 +15,11 @@
         <th>Nome</th>
         <th>Descrição</th>
         <th>Valor</th>
+        <th>Ação</th>
     </tr>
-    @foreach ($produtos as $produtos)
+    @foreach ($produtos as $produto)
     <tr>
-        <td>{{ ++i }}</td>
+        <td>{{ ++$i }}</td>
         <td>{{ $produto -> name }}</td>
         <td>{{ $produto -> description }}</td>
         <td>{{ $produto -> value}}</td>

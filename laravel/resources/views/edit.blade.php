@@ -11,7 +11,7 @@
     <div class = "row">
         Nome: <input type = "text" name = "nome" value = "{{ $produto -> name}}" class = "form-control" placeholder = "Novo nome do produto">
         Descrição: <input type = "text" name = "descricao" value = "{{ $produto -> description}}" class = "form-control" placeholder = "Nova descrição do produto">
-        Valor: <input type = "number" name = "valor" value = "{{ $produto -> value}}"class = "form-control" placeholder = "Novo valor do produto">
+        Valor: <input type = "number" name = "valor" value = "{{ $produto -> value}}" class = "form-control" placeholder = "Novo valor do produto">
         <button type = "submit" class = "btn btn-primary">Enviar</button>
     </div>
 </form>
