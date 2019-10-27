@@ -3,7 +3,7 @@
 <div class = "row">
     <div>
         <div>
-            <h1>Cadastro de produtos</h1>
+            <h1>Index</h1>
             <a class = "btn btn-success" href = "{{ route('produtos.create') }}"> Cadastrar novo </a>
         </div>
     </div>
