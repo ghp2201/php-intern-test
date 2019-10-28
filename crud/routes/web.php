@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('produtos.index');
-});
+});*/
+Route::get('/', 'produtoController@index');
 Route::resource('produtos', 'produtoController');
