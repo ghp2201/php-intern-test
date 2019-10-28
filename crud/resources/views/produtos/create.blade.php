@@ -25,7 +25,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Valor:</strong>
-                <input type="number" name="valor" class="form-control" placeholder="Valor do produto">
+                <input type="number" name="valor" step=".01" class="form-control" placeholder="Valor do produto">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

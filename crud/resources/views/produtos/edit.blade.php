@@ -26,7 +26,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Valor:</strong>
-                    <input type="number" name="valor" value="{{ $produto->valor }}" class="form-control" placeholder="Novo valor">
+                    <input type="number" name="valor" step=".01" value="{{ $produto->valor }}" class="form-control" placeholder="Novo valor">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-left">
