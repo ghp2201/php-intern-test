@@ -9,19 +9,14 @@
                 <a class="btn btn-success" href="{{ route('produtos.create') }}">Cadastrar novo produto</a>
             </div>
         </div>
-    </div>   
-    @if ($message = Session::get('success'))
-        <div class="alert alert-success">
-            <p>{{ $message }}</p>
-        </div>
-    @endif   
+    </div>     
     <table class="table table-bordered">
         <tr>
             <th>Id</th>
             <th>Nome</th>
             <th>Descrição</th>
             <th>Valor</th>
-            <th width="280px"></th>
+            <th></th>
         </tr>
         @foreach ($produtos as $produto)
         <tr>
@@ -40,5 +35,5 @@
         </tr>
         @endforeach
     </table>
-    {!! $produtos->links() !!}      
+    {!! $produtos -> links() !!}      
 @endsection

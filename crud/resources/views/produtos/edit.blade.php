@@ -10,7 +10,7 @@
     <form action="{{ route('produtos.update',$produto->id) }}" method="POST">
         @csrf
         @method('PUT')   
-         <div class="row">
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Nome:</strong>
@@ -29,7 +29,7 @@
                     <input type="number" name="valor" value="{{ $produto->valor }}" class="form-control" placeholder="Novo valor">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-left">
               <button type="submit" class="btn btn-primary">Alterar</button>
             </div>
         </div>   
