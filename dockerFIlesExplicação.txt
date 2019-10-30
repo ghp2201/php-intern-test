@@ -1,0 +1,3 @@
+Os arquivos docker tem por função realizar o controle e o funcionamento mais automatizado
+da suite do docker, que por sua vez é uma especie de sistema de virtualização
+baseado em "containers" que facilita o deploy(implementação) de certa aplicação
